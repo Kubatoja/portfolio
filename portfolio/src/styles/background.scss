@@ -1,0 +1,48 @@
+* {
+  margin: 0vh;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  filter: blur(0.2vh);
+  position: fixed;
+  top: 0vh;
+  left: 0vh;
+}
+.blob {
+  width: 99vw;
+  height: 99vh;
+}
+
+#blobSvg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.blobs {
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+}
+
+$translate: (80vh, 40vh);
+
+.test {
+  transform: translate($translate);
+
+  transform-origin: 20% 20%;
+
+  animation: test 20s ease-in-out infinite;
+}
+
+@keyframes test {
+  0% {
+    transform: translate($translate) rotate(90deg);
+  }
+  50% {
+    transform: translate($translate) rotate(270deg);
+  }
+  100% {
+    transform: translate($translate) rotate(90deg);
+  }
+}
