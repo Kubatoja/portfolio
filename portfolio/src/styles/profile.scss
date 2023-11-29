@@ -1,0 +1,134 @@
+.profile {
+  width: 100vw;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  z-index: 1;
+
+  .name {
+    position: relative;
+    top: -4vh;
+    font-size: 6vh;
+    font-family: "Lato", sans-serif;
+  }
+  h2 {
+    position: relative;
+    top: -4vh;
+    font-size: 2.5vh;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.profilePic {
+  position: relative;
+  top: -12vh;
+  width: 35vh;
+  height: 30vh;
+  border-radius: 20vh;
+
+  //   background-color: black;
+  background-color: rgb(120, 99, 173);
+  box-shadow: 0px 0px 5vh 1vh rgba(2, 72, 167, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 40vh;
+    height: 40vh;
+    background-image: url(../assets/portfolio.png);
+    background-size: 138%;
+    background-position: center;
+  }
+}
+
+.logos {
+  position: relative;
+  top: 5vh;
+  width: 45vw;
+  height: 11vh;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.123);
+  border-radius: 1vh;
+  box-shadow: 0 1vh 5vh rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1vh);
+  -webkit-backdrop-filter: blur(1vh);
+  border: 0.1vh solid rgba(255, 255, 255, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    height: 8vh;
+    width: 8vh;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .html {
+    background-image: url(../assets/logos/html.png);
+  }
+  .js {
+    background-image: url(../assets/logos/js.png);
+    border-radius: 0.5vh;
+  }
+  .css {
+    background-image: url(../assets/logos/css.png);
+  }
+  .scss {
+    background-image: url(../assets/logos/sass.png);
+  }
+  .react {
+    background-image: url(../assets/logos/react.png);
+  }
+  .vite {
+    background-image: url(../assets/logos/vite.png);
+  }
+  .figma {
+    background-image: url(../assets/logos/figma.png);
+  }
+}
+
+.profileArrow {
+  width: 7vh;
+  height: 7vh;
+
+  position: relative;
+  top: 12vh;
+
+  font-size: 6vh;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30vw;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

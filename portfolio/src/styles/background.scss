@@ -3,12 +3,15 @@
 }
 
 .background {
-  width: 100vw;
-  height: 100vh;
-  filter: blur(0.2vh);
+  width: 99vw;
+  height: 99vh;
+  filter: blur(1vh);
   position: fixed;
-  top: 0vh;
+  top: 3vh;
   left: 0vh;
+  overflow: hidden;
+
+  z-index: -1;
 }
 .blob {
   width: 99vw;
@@ -27,22 +30,55 @@
 
 $translate: (80vh, 40vh);
 
-.test {
-  transform: translate($translate);
-
+.blobAnimate1 {
   transform-origin: 20% 20%;
 
-  animation: test 20s ease-in-out infinite;
+  animation: blob1 20s ease-in-out infinite;
 }
 
-@keyframes test {
+.blobAnimate2 {
+  transform-origin: 20% 20%;
+
+  animation: blob2 10s ease-in-out infinite;
+}
+
+.blobAnimate3 {
+  transform-origin: 20% 20%;
+
+  animation: blob3 20s ease-in-out infinite;
+}
+
+@keyframes blob1 {
   0% {
-    transform: translate($translate) rotate(90deg);
+    transform: rotate(90deg);
   }
   50% {
-    transform: translate($translate) rotate(270deg);
+    transform: rotate(270deg);
   }
   100% {
-    transform: translate($translate) rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes blob2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(70deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes blob3 {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
