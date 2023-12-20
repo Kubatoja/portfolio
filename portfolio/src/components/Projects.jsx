@@ -6,6 +6,9 @@ function Projects() {
     <div className="projects">
       <div className="preProjects">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <filter id="grainy">
+            <feTurbulence type="turbulence" baseFrequency="6" />
+          </filter>
           <path
             fill="#bd65f7"
             transform="scale(1 0.4)"

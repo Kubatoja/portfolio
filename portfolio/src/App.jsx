@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.scss";
 import Background from "./components/background";
 import Navbar from "./components/navbar";
@@ -8,6 +8,7 @@ import Test from "./components/test";
 
 function App() {
   const [lang, setLang] = useState(false);
+
   return (
     <>
       <Background />
