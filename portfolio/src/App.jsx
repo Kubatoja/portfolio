@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.scss";
 import Background from "./components/Background";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Test from "./components/test";
