@@ -13,72 +13,8 @@
 
   z-index: -1;
 }
-.blob {
-  width: 99vw;
-  height: 99vh;
-}
 
 #blobSvg {
   width: 100vw;
   height: 100vh;
-}
-
-.blobs {
-  -webkit-filter: url("#goo");
-  filter: url("#goo");
-}
-
-$translate: (80vh, 40vh);
-
-.blobAnimate1 {
-  transform-origin: 20% 20%;
-
-  animation: blob1 20s ease-in-out infinite;
-}
-
-.blobAnimate2 {
-  transform-origin: 20% 20%;
-
-  animation: blob2 10s ease-in-out infinite;
-}
-
-.blobAnimate3 {
-  transform-origin: 20% 20%;
-
-  animation: blob3 20s ease-in-out infinite;
-}
-
-@keyframes blob1 {
-  0% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
-@keyframes blob2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(70deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes blob3 {
-  0% {
-    transform: rotate(360deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
