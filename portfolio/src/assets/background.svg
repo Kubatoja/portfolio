@@ -144,7 +144,7 @@
               "
               ></animate>
             </path>
-            <g transform="translate(-20 400) scale(1.5 2)">
+            <g transform="translate(-100 400) scale(1.8 2.3)">
               <path fill="white" class="blobAnimate2">
                 <animate
                   attributeName="d"
@@ -159,7 +159,7 @@
                 ></animate>
               </path>
             </g>
-            <path fill="white" transform="translate(50 1100) scale(2 1)">
+            <path fill="white" transform="translate(-100 1000) scale(2 1.2)">
               <animate
                 attributeName="d"
                 dur="10000ms"
@@ -172,7 +172,7 @@
               "
               ></animate>
             </path>
-            <g transform="translate(450 470) scale(1.2)">
+            <g transform="translate(600 570) scale(1.6)">
               <path fill="white" class="blobAnimate3">
                 <animate
                   attributeName="d"
