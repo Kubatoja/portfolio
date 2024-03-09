@@ -4,7 +4,7 @@ import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
-import Test from "./components/test";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -14,7 +14,7 @@ function App() {
       <Background />
       <Navbar setLang={setLang} lang={lang} />
       <Profile lang={lang} />
-      <Test />
+      <AboutMe />
       <Projects />
     </>
   );
