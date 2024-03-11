@@ -132,3 +132,22 @@
     border-color: orange;
   }
 }
+
+@media (max-width: 480px) {
+  .profilePic {
+    transform: scale(0.9);
+  }
+  .profile {
+    .name {
+      font-size: 5vh;
+    }
+    h2 {
+      font-size: 2vh;
+    }
+  }
+
+  .logos {
+    width: 100%;
+    transform: scale(0.8);
+  }
+}

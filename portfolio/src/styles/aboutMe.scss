@@ -4,6 +4,11 @@
 .aboutMe {
   margin-top: 0vh;
   height: 120vh;
+  width: 100vw;
+
+  position: sticky;
+  position: -webkit-sticky;
+  overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
@@ -15,7 +20,6 @@
 
   transform: scale(0.9);
 
-  position: sticky;
   top: 0;
 
   perspective: 30vh;
@@ -38,6 +42,7 @@ $orange: rgb(227, 108, 27);
   align-items: center;
   justify-content: center;
 }
+
 .column1 {
   // animation: test1 10s ease-in-out forwards;
   transform: translate3d(0vh, 0vh, 0vh);
@@ -196,7 +201,48 @@ $orange: rgb(227, 108, 27);
     }
   }
 }
+@media (max-width: 480px) {
+  .column1,
+  .column2 {
+    width: 100%;
+  }
+  .icon {
+    height: 10%;
+    width: 90%;
+    transform: scale(1.5);
+    h2 {
+      transform: scale(2.5);
+      svg {
+        transform: scale(0.5);
+      }
+    }
+    p {
+      font-size: 2vh;
+      padding: 1vh;
+    }
+  }
+  .me {
+    flex-direction: column;
+    height: 70vh;
+    overflow: hidden;
+  }
+  .content {
+    height: 70%;
 
+    h1 {
+      font-size: 4vh;
+    }
+
+    .contentContainer {
+      flex-direction: column;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+    }
+  }
+}
 .html {
   background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg");
 }
