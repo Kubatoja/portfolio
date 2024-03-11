@@ -42,9 +42,9 @@ function AboutMe() {
     }
 
     document.getElementById("column1").style.filter =
-      "blur(" + progress / 200 + "vh)";
+      "blur(" + progress / 500 + "vh)";
     document.getElementById("column2").style.filter =
-      "blur(" + (0.5 - progress / 200) + "vh)";
+      "blur(" + (0.2 - progress / 500) + "vh)";
   }, [progress]);
   return (
     <div className="aboutMeBuffer">

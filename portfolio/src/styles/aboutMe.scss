@@ -45,7 +45,7 @@ $orange: rgb(227, 108, 27);
 }
 .column2 {
   transform: translate3d(0, -25vh, -10vh);
-  filter: blur(0.5vh);
+  filter: blur(0.9vh);
   // animation: test2 10s ease-in-out forwards;
 }
 
@@ -53,39 +53,7 @@ $orange: rgb(227, 108, 27);
   position: absolute;
   top: 250vh;
 }
-@keyframes test1 {
-  0% {
-    transform: translate3d(0, 5vh, 0);
-    filter: blur(0vh);
-  }
-  50% {
-    transform: translate3d(0, 50vh, 0);
-  }
-  75% {
-    transform: translate3d(0, 50vh, -10vh);
-  }
-  100% {
-    transform: translate3d(0, 40vh, -10vh);
-    filter: blur(0.5vh);
-  }
-}
 
-@keyframes test2 {
-  0% {
-    transform: translate3d(0, -20vh, -10vh);
-    filter: blur(0.5vh);
-  }
-  50% {
-    transform: translate3d(0, -50vh, -10vh);
-  }
-  75% {
-    transform: translate3d(0, -52vh, 0);
-  }
-  100% {
-    transform: translate3d(0, -52vh, 0);
-    filter: blur(0vh);
-  }
-}
 .me {
   width: 90%;
   height: 90%;
@@ -96,6 +64,8 @@ $orange: rgb(227, 108, 27);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  box-shadow: 0px 0px 1vh 0.5vh rgba(17, 17, 17, 0.466);
 }
 .icon {
   width: 10%;

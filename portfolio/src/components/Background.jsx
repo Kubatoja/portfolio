@@ -6,7 +6,15 @@ function Background() {
   return (
     <div className="background">
       <div className="blob">
-        <img id="blobSvg" src={svg} href={svg} xlink:href={svg}></img>
+        <img
+          id="blobSvg"
+          height={"1200px"}
+          width={"1200px"}
+          viewBox={"0 0 400 400"}
+          src={svg}
+          href={svg}
+          xlink:href={svg}
+        ></img>
       </div>
     </div>
   );
