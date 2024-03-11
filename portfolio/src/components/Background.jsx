@@ -13,7 +13,7 @@ function Background() {
           viewBox={"0 0 400 400"}
           src={svg}
           href={svg}
-          xlink:href={svg}
+          xlinkHref={svg}
         ></img>
       </div>
     </div>

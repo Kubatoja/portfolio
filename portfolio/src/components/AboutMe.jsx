@@ -15,7 +15,7 @@ function AboutMe() {
 
     if (progress > 0 && progress < 50) {
       document.getElementById("column1").style =
-        "transform: translate3d(0, " + progress * 0.8 + "vh, 0);";
+        "transform: translate3d(0, " + progress * 0.8 + "vh, 0vh);";
 
       document.getElementById("column2").style =
         "transform: translate3d(0," + (-25 - progress * 0.9) + "vh, -10vh);";
@@ -31,12 +31,12 @@ function AboutMe() {
         "vh);";
     } else if (progress > 75) {
       document.getElementById("column1").style =
-        "transform: translate3d(0, " +
+        "z-index: 0; transform: translate3d(0, " +
         (40 - (progress - 75) * 0.4) +
         "vh, -10vh);";
 
       document.getElementById("column2").style =
-        "transform: translate3d(0, " +
+        "z-index: 1; transform: translate3d(0, " +
         (-70 + (progress - 75) * 0.4) +
         "vh, 0vh);";
     }
