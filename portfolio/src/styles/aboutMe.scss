@@ -23,6 +23,7 @@
   top: 0;
 
   perspective: 30vh;
+  
 }
 
 $color1: rgb(20, 21, 22);
@@ -46,14 +47,14 @@ $orange: rgb(227, 108, 27);
 .column1 {
   // animation: test1 10s ease-in-out forwards;
   transform: translate3d(0vh, 0vh, 0vh);
-  transition: 0.05s;
+  // transition: 0.05s;
   z-index: 1;
 }
 .column2 {
   transform: translate3d(0vh, -25vh, -10vh);
   filter: blur(0.9vh);
   // animation: test2 10s ease-in-out forwards;
-  transition: 0.05s;
+  // transition: 0.05s;
   z-index: 0;
 }
 
