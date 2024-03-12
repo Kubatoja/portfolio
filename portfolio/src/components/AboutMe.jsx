@@ -10,42 +10,13 @@ import { Parallax } from "react-scroll-parallax";
 
 function AboutMe() {
   const [progress, setProgress] = useState(0);
-  useEffect(() => {
-    console.log(progress);
 
-    if (progress > 0 && progress < 50) {
-      document.getElementById("column1").style =
-        "transform: translate3d(0, " + progress * 0.8 + "vh, 0vh);";
+ 
+  function test(){
+    document.getElementById("column1").style = "animation: column1Forward 1s forwards;"
+    document.getElementById("column2").style = " animation: column2Forward 1s forwards;"
+  }
 
-      document.getElementById("column2").style =
-        "transform: translate3d(0," + (-25 - progress * 0.9) + "vh, -10vh);";
-    } else if (progress > 50 && progress < 75) {
-      document.getElementById("column1").style =
-        "transform: translate3d(0, 40vh, " +
-        (0 - (progress - 50) * 0.4) +
-        "vh);";
-
-      document.getElementById("column2").style =
-        "transform: translate3d(0, -70vh, " +
-        (-10 + (progress - 50) * 0.4) +
-        "vh);";
-    } else if (progress > 75) {
-      document.getElementById("column1").style =
-        "z-index: 0; transform: translate3d(0, " +
-        (40 - (progress - 75) * 0.4) +
-        "vh, -10vh);";
-
-      document.getElementById("column2").style =
-        "z-index: 1; transform: translate3d(0, " +
-        (-70 + (progress - 75) * 0.4) +
-        "vh, 0vh);";
-    }
-
-    document.getElementById("column1").style.filter =
-      "blur(" + progress / 500 + "vh)";
-    document.getElementById("column2").style.filter =
-      "blur(" + (0.2 - progress / 500) + "vh)";
-  }, [progress]);
   return (
     <div className="aboutMeBuffer">
       <Parallax
@@ -93,7 +64,7 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div id="column2" className="column2">
+        <div id="column2" className="column2" onClick={()=>{test()}}>
           <div className="me">
             <div className="icon">
               <h2>
